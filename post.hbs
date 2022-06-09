@@ -1,0 +1,32 @@
+{{!< default}}
+
+<div class="container">
+    <div class="row">
+        <div class="content-column col-sm-12">
+            <div class="content-area">
+                <main class="site-main">
+                    {{#post}}
+                        <article
+                            class="{{post_class}}{{#unless feature_image}} no-image{{/unless}} single u-shadow">
+                            <div class="post-meta">
+                                <time class="post-meta-date"
+                                    datetime="{{date format="YYYY-MM-DD"}}">
+                                    {{date published_at}}
+                                </time>
+                                <span
+                                    class="post-meta-length">{{reading_time}}</span>
+                            </div>
+                            {{> post-media with_caption=true}}
+                            <div class="post-wrapper">
+                                <div class="post-content u-text-format">
+                                    {{content}}
+                                </div>
+                                {{> tags}}
+                            </div>
+                        </article>
+                    {{/post}}
+                </main>
+            </div>
+        </div>
+    </div>
+</div>

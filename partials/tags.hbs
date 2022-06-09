@@ -1,0 +1,8 @@
+{{#if tags}}
+    <h2 class="post-tags-header">Tags</h2>
+    <div class="post-tags">
+        {{#foreach tags}}
+            <a class="post-tag" id="{{name}}" href="{{url}}" style="background-color: {{accent_color}};">{{name}}</a>
+        {{/foreach}}
+    </div>
+{{/if}}

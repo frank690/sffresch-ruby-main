@@ -1,0 +1,10 @@
+<div class="widget widget-tags">
+    <h4 class="widget-title">Tags</h4>
+    {{#get "tags" limit="all" include="count.posts"}}
+        <div class="tag-feed">
+            {{#foreach tags}}
+                <a class="post-tag" id="{{name}}" href="{{url}}" style="background-color: {{accent_color}};">{{name}}</a>
+            {{/foreach}}
+        </div>
+    {{/get}}
+</div>
