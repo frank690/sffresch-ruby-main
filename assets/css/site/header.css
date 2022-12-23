@@ -22,6 +22,10 @@
     justify-content: flex-end;
 }
 
+.navbar-logo {
+    height: 50%;
+}
+
 .logo {
     position: relative;
     display: inline-block;
@@ -52,4 +56,12 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+}
+
+.github {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 20px;
 }
