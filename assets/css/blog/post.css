@@ -44,7 +44,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: var(--font-alt);
+    font-family: var(--gh-font-body);
     width: 101%;
     text-align: center;
     background-color: white;
